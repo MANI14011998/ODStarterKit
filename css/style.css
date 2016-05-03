@@ -1,0 +1,163 @@
+
+/* this is all for the talking bubble */
+
+
+.talk-bubble {
+  background: url('../spiky.png') no-repeat;
+  background-size: cover;
+  font-size: 46px;
+  width: 507px;
+  height: 461px;
+  text-align: center;
+  padding: 8px 0;
+  position: relative !important;
+  margin: 20px auto;
+
+&:after {
+  content: "";
+  position: absolute;
+  color: white;
+  left: 49%;
+  transform: translateX(-50%);
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid white;
+      }
+}
+
+/* end of talking bubble */
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background: url('../woman.jpg') no-repeat;
+  background-size: 584px 109vh;
+}
+.single-item {
+  position: absolute;
+  top: 113%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 989px;
+  height: 360px;
+  border: solid 6px #fff;
+  border-radius: 10px;
+  background: #F99FDC;
+  box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+.left-set,
+.right-set {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.left-set {
+  float: left;
+  overflow: hidden;
+}
+.left-set img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+}
+.right-set {
+  float: right;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+.right-set .name,
+.right-set .subname {
+  font-weight: bold;
+}
+.right-set .name {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.right-set .subname {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.right-set .price {
+  padding: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.right-set .description p {
+  font-size: 0.9rem;
+  text-align: justify;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+.right-set .color {
+  margin: 1rem 0;
+}
+.right-set .color:after {
+  content: "";
+  display: block;
+  clear: left;
+}
+.right-set .color ul li {
+  width: 20px;
+  height: 20px;
+  border: solid 2px #aaa;
+  border-radius: 4px;
+  float: left;
+  margin-right: 0.4rem;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.right-set .color ul li:nth-child(1) {
+  background: #222;
+}
+.right-set .color ul li:nth-child(1):hover {
+  border-color: #222;
+}
+.right-set .color ul li:nth-child(2) {
+  background: crimson;
+}
+.right-set .color ul li:nth-child(2):hover {
+  border-color: crimson;
+}
+.right-set button {
+  width: 100%;
+  height: 2rem;
+  cursor: pointer;
+  background: yellow;
+  border: solid 2px #111;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.right-set button:hover {
+  background: #70e1f5;
+}
+
+.talk-bubble>p{
+  margin-top: 27%;
+    color: red;
+    font-size: 42px;
+    font-weight: bold;
+    margin-right: 9%;
+    text-shadow: 0 0 5px;
+}
